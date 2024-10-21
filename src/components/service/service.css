@@ -1,0 +1,43 @@
+#service{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servHead{
+    margin: 1rem;
+}
+.servHead h1{
+    font-size: 2rem;
+    border-bottom: 1px solid blanchedalmond;
+    color: darkturquoise;
+}
+
+.servDesc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.servs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 25rem;
+    height: 10rem;
+    text-align: center;
+    margin: 1rem;
+    background-color: rgba(1, 33, 34, 0.411);
+    border-radius: .4rem;
+    box-shadow: 1px 2px 2px 1px white;
+}
+
+
+
+

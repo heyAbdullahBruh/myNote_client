@@ -1,0 +1,96 @@
+.aboutSec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 3rem; */
+}
+
+.abImg{
+    width: 40%;
+    text-align: center;
+}
+.abDesc{
+    width: 60%;
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    gap: 1rem;
+}
+
+.abImg img{
+    width: 70%;
+}
+ .descUp{
+    padding: 1rem;
+    text-align: center;
+ }
+
+.dscHead {
+    padding: 1rem;
+}
+.dscHead button{
+    background-color: rgba(3, 79, 141, 0.24);
+    color: rgb(177, 9, 177);
+    border: none;
+    border-right: 1px solid greenyellow;
+}
+
+.skill, .edu, .exp{
+ margin: 1rem;
+}
+
+.abDsch3{
+    font-size: 2rem;
+    border: 1px solid rgb(9, 187, 231);
+    width: 12rem;
+    text-align: center;
+    padding: 0;
+}
+
+
+.skill ul{
+    list-style-type: circle;
+    padding: 1rem;
+}
+
+.edu> .ssc, .hsc{
+    margin: 1rem;
+}
+
+.exp .exps{
+    margin: 1rem;
+    /* padding: 1rem; */
+}
+
+.exps h3{
+    color: deepskyblue;
+    margin: 0;
+}.exps h4{
+    margin: 0;
+    color: yellowgreen;
+}
+
+
+@media screen and (max-width:780px) {
+    .aboutSec{
+        flex-direction: column;
+    }
+    
+    .abImg{
+        width: 100%;
+        text-align: center;
+    }
+    .abImg img{
+        width: 40%;
+    }
+    .abDesc{
+        width: 100%;
+        align-items: center;
+    }
+}
+
+
+

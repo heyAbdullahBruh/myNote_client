@@ -1,0 +1,107 @@
+.contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.cntcLeft{
+    padding: 1rem;
+}
+
+.cntcHead{
+    margin: 1rem;
+}
+
+.cntcHead h1{
+    font-size: 2.5rem;
+    color: hotpink;
+    border-bottom: 1px solid wheat;
+    width: 12rem;
+}
+
+.addrsLink{
+    margin: 1rem;
+}
+
+.address{
+    margin: 2rem 1rem;
+}
+.cntcSocial{
+    margin: 1rem;
+}
+
+.cntcSocial .cntSlink{
+    color: wheat;
+}
+.cv{
+    margin: 2rem 1rem;
+}
+
+
+.cntcRight{
+    padding: 1rem;
+}
+
+.cntcRight form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cntcRight form input{
+    width: 25rem;
+    height: 4rem;
+    background:none;
+    border: 1px solid aqua;
+    font-size: 1rem;
+    color: darkturquoise;
+    padding: .5rem 1rem;
+    font-family: "Roboto Mono", monospace;
+}
+
+.cntcRight form textarea{
+    width: 25rem;
+    height: 14rem;
+    background:none;
+    border: 1px solid aqua;
+    font-size: 1rem;
+    color: darkturquoise;
+    padding: .5rem 1rem;
+    font-family: "Roboto Mono", monospace;
+    resize: none;
+}
+
+.cntcRight form button{
+    width: 25rem;
+    background:darkturquoise;
+    border: 1px solid aqua;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    padding: .5rem 1rem;
+    font-family: "Roboto Mono", monospace;
+}.cntcRight form button:hover{
+    background:none;
+    color: darkturquoise;
+}
+
+@media screen and (max-width:450px) {
+    .cntcRight form input{
+        width: 20rem;
+    }
+    
+    .cntcRight form textarea{
+        width: 20rem;
+    }
+    
+    .cntcRight form button{
+        width: 20rem;
+    }
+}
+

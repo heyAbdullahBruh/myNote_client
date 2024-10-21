@@ -1,0 +1,70 @@
+.work{
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.wrkHead{
+    margin: 1rem;
+    text-align: center;
+}
+
+.wrkBody{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.works{
+    width: 30rem;
+    border-radius: .6rem;
+    overflow: hidden;
+    position: relative;
+    transition: transform .6s;
+    cursor: pointer;
+}
+.works img{
+    border-radius: .6rem;
+    width: 100%;
+    display: block;
+}
+
+
+.works .layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.8),rgb(5, 76, 87));
+    border-radius: .6rem;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(236, 105, 138);
+    transition: height .3s;
+}
+
+.works:hover img {
+    transform: scale(1.1);
+}
+
+.works:hover .layer {
+    height: 100%;
+}
+
+
+@media screen and (max-width:520px) {
+    .works{
+        width: 23rem;
+    }
+    p{
+        font-size: .8rem;
+    }
+}
+
+
+
