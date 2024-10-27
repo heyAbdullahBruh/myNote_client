@@ -1,0 +1,92 @@
+
+.Mnavhedar{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(5, 60, 105, 0.801);
+    padding: 1rem;
+  }
+  .Mnavhedar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  
+  }
+  
+  nav .Mnavlogo{
+    width: 30%;
+  }
+  
+  .Mnavlogo{
+    color: rgb(5, 250, 5);
+    font-size: 1.8rem;
+  }
+  .Mnavlogo h1 span{
+    color: rgb(209, 8, 209);
+  }
+  nav .MnavItem{
+    width: 70%;
+  }
+  .MnavItem ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .MnavItem ul li .MnavLink{
+     color: aqua;
+     transition: .5s;
+  }.MnavItem ul li .MnavLink:hover{
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+  }
+  
+  
+  
+  footer{
+    background-color: rgba(3, 61, 53, 0.466);
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    rotate: .5deg;
+  }
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width:780px) {
+    .Mnavhedar nav {
+      flex-direction: column;
+    }
+  
+    .MnavItem ul li{
+      padding: .1rem;
+   }
+  
+  }
+  
+  @media screen and (max-width:400px) {
+    p ,li ,a ,td ,strong ,button{
+      padding: .2rem .3rem;
+      font-size: .8rem;
+    }
+    .MnavItem ul li{
+      padding: 0rem;
+   }
+   .MnavItem ul li .MnavLink{
+    padding: .1rem .3rem;
+   }
+  
+  }
+  

@@ -1,10 +1,64 @@
+'use client';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './contact.css';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faDeleteLeft, faPhone } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { faFacebookSquare, faLinkedin, faXTwitter, faYahoo, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
+import { useState } from 'react';
 
 const Contact = () => {
+    const [data,setData]=useState({
+        name:'',
+        mail:'',
+        message:''
+
+    });
+    const [result,setResult]=useState({
+        success:null,
+        message:''
+    });
+
+    const {name,mail,message}=data;
+
+    const handleChange = (e) => {
+        setData({
+            ...data,
+            [e.target.name]:e.target.value
+        });
+    };
+    const handleSubmit =(e)=>{
+        e.preventDefault();
+        // console.log(data);
+         fetch('https://mrpie-api.onrender.com/api/v1/message/add',{
+            cache:"no-store",
+            method:'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body:JSON.stringify(data)
+            
+        }).then(res=>res.json())
+        .then((res)=>{
+            setResult({
+                success:res.success,
+                message:res.message
+            });
+            setData({
+                name:'',
+                mail:'',
+                message:''
+            });
+            if (res.success===true) {
+                alert(res.message);
+                location.reload();
+            }else{
+                location.reload();
+            }
+        });
+
+    };
+
+
     return (
         <section className='contact' id='contact'>
             <div className="cntcLeft">
@@ -13,7 +67,7 @@ const Contact = () => {
                 </div>
                 <div className="addrsLink">
                     <div className="address">
-                        <p><FontAwesomeIcon icon={faYahoo} style={{width:'1.3rem'}}/> abu.sayed121@yahoo.com</p>
+                        <p><FontAwesomeIcon icon={faYahoo} style={{width:'1.3rem'}}/><Link href={'mailto:abu.sayed121@yahoo.com'} style={{color:'white',textDecoration:'none'}}>abu.sayed121@yahoo.com</Link> </p>
                         <p><FontAwesomeIcon icon={faPhone} style={{width:'1.3rem'}}/> +8801996404083</p>
                     </div>
                     <div className="cntcSocial">
@@ -23,6 +77,7 @@ const Contact = () => {
 
                         <Link className='cntSlink' href={'https://www.youtube.com/@Mr.1Pie'}><FontAwesomeIcon icon={faXTwitter} style={{width:'1.5rem'}}/></Link>
 
+                        <FontAwesomeIcon icon={faDeleteLeft}/>
                         <Link className='cntSlink' href={'https://www.linkedin.com/in/heyAbdullahBro'}><FontAwesomeIcon icon={faLinkedin} style={{width:'1.5rem'}}/></Link>
                     </div>
                     <div className="cv">
@@ -31,13 +86,18 @@ const Contact = () => {
                 </div>
             </div>
             <div className="cntcRight">
-                <form action="">
-                    <input placeholder='Write your name' type="text" required name="name" id="name" />
-                    <input placeholder='Write your mail' type="text" required name="mail" id="mail" />
-                    <textarea placeholder='Give me your suggestion' required name="message" id="message"></textarea>
-                    <button>SEND</button>
+                <form onSubmit={handleSubmit}>
+                    <input placeholder='Write your name' value={name} type="text" onChange={handleChange} required name="name" id="name" />
+                    <input placeholder='Write your mail' value={mail} type="email" onChange={handleChange} required name="mail" id="mail" />
+                    <textarea placeholder='Give me your suggestion' value={message} onChange={handleChange} required name="message" id="message"></textarea>
+                    <button type='submit'>SEND</button>
                 </form>
-            </div>
+                {
+                    result.success===true
+                    ?<p style={{width:'23rem',fontSize:'1.3rem', padding:'0',margin:"0",color:'green'}}>{result.message}</p>
+                    :<p style={{width:'23rem',fontSize:'1.3rem', padding:'0',margin:"0",color:'red'}}>{result.message}</p>
+                }
+            </div> 
         </section>
     );
 };

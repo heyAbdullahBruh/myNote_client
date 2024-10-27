@@ -1,0 +1,41 @@
+.notes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.addNote button{
+    background-color: #5d0574;
+    color: rgb(0, 255, 106);
+    border-radius: 3rem;
+}
+
+.showNote h1{
+    margin: 1rem 0;
+    border-bottom: 2px solid yellowgreen;
+    text-align: center;
+    font-size: 2rem;
+    width: 15rem;
+}
+
+.allNotes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}
+
+.allNotes article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    /* width: 24rem; */
+}
+
+
+
