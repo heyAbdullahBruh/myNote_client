@@ -1,0 +1,60 @@
+.plans{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.showplan{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.showplan h1{
+    margin: 1rem 0;
+    border-bottom: 2px solid yellowgreen;
+    text-align: center;
+    font-size: 2rem;
+    width: 15rem;
+}
+
+.allplans {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}
+
+.allplans article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    color: rgb(46, 44, 44);
+    padding: .3rem .6rem;
+    border-radius: .2rem;
+    width: 24rem;
+}
+
+@media screen and (max-width:990px) {
+    .allplans {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .allplans {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .allplans article{
+        width: 23rem;
+    }
+}

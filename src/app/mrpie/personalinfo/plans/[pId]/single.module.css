@@ -1,0 +1,45 @@
+
+
+.singleplan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.singleplan .splanSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: powderblue;
+    color: black;
+    border-radius: 1rem;
+    width: 30rem;
+}
+@media screen and (max-width:600px) {
+    .singleplan{
+        padding: .5rem;
+        margin: 2rem 0;
+    }
+    .singleplan .splanSec{
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .singleplan{
+        padding: .5rem;
+        margin: 2rem 0;
+    }
+    .singleplan .splanSec{
+        width: 22rem;
+    }
+}
+
+
+
