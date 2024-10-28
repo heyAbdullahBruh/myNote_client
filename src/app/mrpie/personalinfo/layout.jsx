@@ -27,7 +27,7 @@ export default async function Mrpie({ children }) {
                      <Link className="MnavLink" href={'/mrpie/personalinfo/terros'}>Terrors</Link>
                    </li>
                    <li>
-                     <Link className="MnavLink" href={'/mrpie/personalinfo/messages'}>Public Message</Link>
+                     <Link className="MnavLink" href={'/mrpie/personalinfo/messages'}>Message</Link>
                    </li>
                    {/* <li></li> */}
                  </ul>

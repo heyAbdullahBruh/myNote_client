@@ -8,12 +8,13 @@
     margin: 1rem;
 }
 
-.addNote button{
-    background-color: #5d0574;
-    color: rgb(0, 255, 106);
-    border-radius: 3rem;
+.showNote{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
-
 .showNote h1{
     margin: 1rem 0;
     border-bottom: 2px solid yellowgreen;
@@ -34,8 +35,25 @@
     justify-content: space-between;
     align-items: center;
     background-color: green;
-    /* width: 24rem; */
+    padding: .3rem .6rem;
+    border-radius: .2rem;
+    width: 24rem;
 }
 
+@media screen and (max-width:990px) {
+    .allNotes {
+        grid-template-columns: auto auto;
+    }
+}
 
+@media screen and (max-width:780px) {
+    .allNotes {
+        grid-template-columns: auto;
+    }
+}
 
+@media screen and (max-width:400px) {
+    .allNotes article{
+        width: 23rem;
+    }
+}

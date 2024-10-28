@@ -1,0 +1,45 @@
+
+
+.singleNote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.singleNote .sNoteSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: powderblue;
+    color: black;
+    border-radius: 1rem;
+    width: 30rem;
+}
+@media screen and (max-width:600px) {
+    .singleNote{
+        padding: .5rem;
+        margin: 2rem 0;
+    }
+    .singleNote .sNoteSec{
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .singleNote{
+        padding: .5rem;
+        margin: 2rem 0;
+    }
+    .singleNote .sNoteSec{
+        width: 22rem;
+    }
+}
+
+
+
