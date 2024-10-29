@@ -1,0 +1,98 @@
+.terrEdit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.sFormAct button{
+    background-color: #fdff72;
+    color: rgb(38, 39, 38);
+    cursor: pointer;
+    border-radius: .4rem;
+}
+
+
+
+.terrEdit form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    transition: all 1s ease-in;
+}
+
+.terrEdit form input{
+    width: 25rem;
+    height: 4rem;
+    background:none;
+    border: 1px solid aqua;
+    font-size: 1rem;
+    color: darkturquoise;
+    padding: .5rem 1rem;
+    font-family: "Roboto Mono", monospace;
+}
+
+.terrEdit form textarea{
+    width: 25rem;
+    height: 10rem;
+    background:none;
+    border: 1px solid aqua;
+    font-size: 1rem;
+    color: darkturquoise;
+    padding: .5rem 1rem;
+    font-family: "Roboto Mono", monospace;
+    resize: none;
+}
+
+.terrEdit form select{
+    width: 25rem;
+    height: 4rem;
+    background:none;
+    border: 1px solid aqua;
+    font-size: 1rem;
+    color: darkturquoise;
+    padding: .5rem 1rem;
+    font-family: "Roboto Mono", monospace;
+}
+
+.terrEdit form select option{
+    background:black;
+}
+
+.terrEdit form button{
+    width: 25rem;
+    background:darkturquoise;
+    border: 1px solid aqua;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    padding: .5rem 1rem;
+    font-family: "Roboto Mono", monospace;
+}.terrEdit form button:hover{
+    background:none;
+    color: darkturquoise;
+}.terrEdit form button:focus{
+    background:none;
+    color: rgb(209, 188, 0);
+}
+
+@media screen and (max-width:450px) {
+    .terrEdit form input{
+        width: 20rem;
+    }
+    
+    .terrEdit form textarea{
+        width: 20rem;
+    }
+    
+    .terrEdit form select{
+        width: 20rem;
+    }
+    .terrEdit form button{
+        width: 20rem;
+    }
+}
+

@@ -1,0 +1,85 @@
+.terrs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.addTerr{
+    margin: 1rem;
+}
+.showTerr{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.showTerr h1{
+    margin: 1rem 0;
+    border-bottom: 2px solid yellowgreen;
+    text-align: center;
+    font-size: 2rem;
+    width: 15rem;
+}
+
+.allTerrs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}
+
+.allTerrs article{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color: lightblue;
+    color: rgb(46, 44, 44);
+    /* color: ; */
+    padding: .3rem .6rem;
+    border-radius: .2rem;
+    width: 20rem;
+    text-align: center;
+}
+
+.allTerrs article img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+.terrType{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: .2rem;
+    margin: 1rem 0;
+}
+ .terrType p{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 60%;
+    content: ' ';
+}
+@media screen and (max-width:990px) {
+    .allTerrs {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .allTerrs {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .allTerrs article{
+        width: 23rem;
+    }
+}

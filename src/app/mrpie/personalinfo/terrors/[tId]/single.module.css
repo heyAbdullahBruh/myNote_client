@@ -1,0 +1,80 @@
+
+
+.singleTerr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+.terrType{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: .2rem;
+    margin: 1rem 0;
+}
+ .terrType p{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 60%;
+    content: ' ';
+}
+
+.singleTerr .sTerrSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgba(232, 251, 253, 0.082);
+    color: wheat;
+    border-radius: 1rem;
+    width: 40rem;
+}
+
+.sTerrSec .TerrInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.TerrPhoto{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.TerrPhoto img{
+    width: 20rem;
+}
+
+@media screen and (max-width:600px) {
+    .singleTerr{
+        padding: .5rem;
+        margin: 2rem 0;
+    }
+    .TerrPhoto{
+        grid-template-columns: auto ;
+    }
+    .singleTerr .sTerrSec{
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .singleTerr{
+        padding: .5rem;
+        margin: 2rem 0;
+    }
+    .singleTerr .sTerrSec{
+        width: 22rem;
+    }
+}
+
+
+
