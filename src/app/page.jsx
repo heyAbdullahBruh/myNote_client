@@ -7,6 +7,7 @@ import Link from "next/link";
 import  "./page.css";
 
 export default function Home() {
+  const date =new Date;
   return (       
   <>
       <header className="navhedar">
@@ -44,7 +45,7 @@ export default function Home() {
 
       <footer>
                 <div className="leftFot">
-                      <p> <span style={{fontSize:'1.5rem'}}>&copy;</span>Copyright By Mr.Pie .All right reserve 2024</p>
+                      <p> <span style={{fontSize:'1.5rem'}}>&copy;</span>Copyright By Mr.Pie .All right reserve {date.getFullYear()}</p>
                 </div>
                 <div className="midFot">
                      <Link style={{color:'white',textDecoration:'none'}} href='https://www.facebook.com/Mr.1Pie/'>Facebook</Link><span>|</span>

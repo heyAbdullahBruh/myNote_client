@@ -13,7 +13,7 @@ const Contact = () => {
         mail:'',
         message:''
 
-    });p
+    });
     const [result,setResult]=useState({
         success:null,
         message:''
@@ -74,15 +74,14 @@ const Contact = () => {
                     <div className="cntcSocial">
                         <Link className='cntSlink' href={'https://www.facebook.com/Mr.1Pie'}><FontAwesomeIcon icon={faFacebookSquare} style={{width:'1.5rem'}}/></Link>
 
-                        <Link className='cntSlink' href={'https://x.com/MrPieX'}><FontAwesomeIcon icon={faYoutubeSquare} style={{width:'1.5rem'}}/></Link>
+                        <Link className='cntSlink' href={'https://x.com/MrPieX'}><FontAwesomeIcon icon={faXTwitter} style={{width:'1.5rem'}}/></Link>
 
-                        <Link className='cntSlink' href={'https://www.youtube.com/@Mr.1Pie'}><FontAwesomeIcon icon={faXTwitter} style={{width:'1.5rem'}}/></Link>
+                        <Link className='cntSlink' href={'https://www.youtube.com/@Mr.1Pie'}><FontAwesomeIcon icon={faYoutubeSquare} style={{width:'1.5rem'}}/></Link>
 
-                        <FontAwesomeIcon icon={faDeleteLeft}/>
                         <Link className='cntSlink' href={'https://www.linkedin.com/in/heyAbdullahBro'}><FontAwesomeIcon icon={faLinkedin} style={{width:'1.5rem'}}/></Link>
                     </div>
                     <div className="cv">
-                        <button>DOWNLOAD CV</button>
+                        <Link href={'https://pdflink.to/4812689c/'} target='_blank'><button style={{cursor:'pointer'}}>DOWNLOAD CV</button></Link>
                     </div>
                 </div>
             </div>
