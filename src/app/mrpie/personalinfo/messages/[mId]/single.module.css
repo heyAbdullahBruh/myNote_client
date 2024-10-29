@@ -1,0 +1,45 @@
+
+
+.singleMsg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.singleMsg .sMessageSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: powderblue;
+    color: black;
+    border-radius: 1rem;
+    width: 30rem;
+}
+@media screen and (max-width:600px) {
+    .singleMsg{
+        padding: .5rem;
+        margin: 2rem 0;
+    }
+    .singleMsg .sMessageSec{
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .singleMsg{
+        padding: .5rem;
+        margin: 2rem 0;
+    }
+    .singleMsg .sMessageSec{
+        width: 22rem;
+    }
+}
+
+
+

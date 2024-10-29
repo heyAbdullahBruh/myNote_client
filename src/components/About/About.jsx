@@ -47,6 +47,7 @@ const About = () => {
                         <li>CSS</li>
                         <li>JavaScript</li>
                         <li>REACT</li>
+                        <li>NEXT.JS</li>
                         <li>NODE</li>
                         <li>EXPRESS</li>
                         <li>MONGODB</li>

@@ -5,6 +5,7 @@ import { faDeleteLeft, faPhone } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { faFacebookSquare, faLinkedin, faXTwitter, faYahoo, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
+import { api } from '@/config/api';
 
 const Contact = () => {
     const [data,setData]=useState({
@@ -12,7 +13,7 @@ const Contact = () => {
         mail:'',
         message:''
 
-    });
+    });p
     const [result,setResult]=useState({
         success:null,
         message:''
@@ -29,7 +30,7 @@ const Contact = () => {
     const handleSubmit =(e)=>{
         e.preventDefault();
         // console.log(data);
-         fetch('https://mrpie-api.onrender.com/api/v1/message/add',{
+         fetch(`${api}/message/add`,{
             cache:"no-store",
             method:'POST',
             headers: {
