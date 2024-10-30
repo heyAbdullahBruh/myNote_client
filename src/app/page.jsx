@@ -13,7 +13,7 @@ export default function Home() {
       <header className="navhedar">
          <nav>
             <div className='navlogo'>
-                 <h1>Mr.<span>Pieee</span></h1>
+                 <h1>Mr.<span>Pie</span></h1>
             </div>
             <div className="navItem">
                  <ul>
