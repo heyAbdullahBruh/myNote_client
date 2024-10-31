@@ -25,7 +25,7 @@ const LogIn = ({token}) => {
             };
             const handleSubmit =async(e)=>{
                 e.preventDefault();
-                    await fetch(`${api}/user/logIn`,{
+                    await fetch(`${api}/user/logIn`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -35,16 +35,27 @@ const LogIn = ({token}) => {
                             username,
                             password
                         }),
-                    }).then((res)=>res.json())
-                    .then((res)=>{
-                        if (res.success===true) {
+                    })
+                    .then((res) => {
+                        if (!res.ok) {
+                            throw new Error(`HTTP error! Status: ${res.status}`);
+                        }
+                        return res.json();
+                    })
+                    .then((res) => {
+                        if (res.success === true) {
                             alert(res.message);
                             router.replace('/mrpie/personalinfo');
-                        }else{
+                        } else {
                             alert(res.message);
                             location.reload();
                         }
+                    })
+                    .catch((error) => {
+                        console.error("Fetch error:", error);
+                        alert("An error occurred. Check console for details.");
                     });
+                    
 
             };
 
