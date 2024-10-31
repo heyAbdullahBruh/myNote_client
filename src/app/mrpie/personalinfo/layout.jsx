@@ -5,7 +5,7 @@ import LogOut from "@/components/logOut/LogOut";
 export default async function Mrpie({ children }) {
     const cookieStore=await cookies();
     const token = cookieStore.get('token')?.value;
-  
+  // cookieStore.
   return (
     <>
         <header className="Mnavhedar">
