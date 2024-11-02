@@ -49,8 +49,13 @@ export default function Home() {
                 </div>
                 <div className="midFot">
                      <Link style={{color:'white',textDecoration:'none'}} href='https://www.facebook.com/Mr.1Pie/'>Facebook</Link><span>|</span>
+
                      <Link style={{color:'white',textDecoration:'none'}} href='https://x.com/MrPieX'>X</Link><span>|</span>
+
                      <Link style={{color:'white',textDecoration:'none'}} href='https://www.youtube.com/@Mr.1Pie'>YouTube</Link><span>|</span>
+
+                     <Link style={{color:'white',textDecoration:'none'}} href='https://github.com/MrPieee'>GitHub</Link><span>|</span>
+
                      <Link style={{color:'white',textDecoration:'none'}} href='https://www.linkedin.com/in/heyAbdullahBro'>LinkedIn</Link>
                 </div>
                 <div className="rightFot" style={{rotate:'-90deg'}}>

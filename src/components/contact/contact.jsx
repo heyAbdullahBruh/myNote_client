@@ -1,9 +1,9 @@
 'use client';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './contact.css';
-import { faDeleteLeft, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
-import { faFacebookSquare, faLinkedin, faXTwitter, faYahoo, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookSquare, faGithubSquare, faLinkedin, faXTwitter, faYahoo, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
 import { api } from '@/config/api';
 
@@ -78,7 +78,10 @@ const Contact = () => {
 
                         <Link className='cntSlink' href={'https://www.youtube.com/@Mr.1Pie'}><FontAwesomeIcon icon={faYoutubeSquare} style={{width:'1.5rem'}}/></Link>
 
+                        <Link className='cntSlink' href={'https://github.com/MrPieee'}><FontAwesomeIcon icon={faGithubSquare} style={{width:'1.5rem'}}/></Link>
+
                         <Link className='cntSlink' href={'https://www.linkedin.com/in/heyAbdullahBro'}><FontAwesomeIcon icon={faLinkedin} style={{width:'1.5rem'}}/></Link>
+
                     </div>
                     <div className="cv">
                         <Link href={'https://pdflink.to/ab846943/'} target='_blank'><button style={{cursor:'pointer'}}>DOWNLOAD CV</button></Link>
