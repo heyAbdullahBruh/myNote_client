@@ -81,7 +81,7 @@ const Contact = () => {
                         <Link className='cntSlink' href={'https://www.linkedin.com/in/heyAbdullahBro'}><FontAwesomeIcon icon={faLinkedin} style={{width:'1.5rem'}}/></Link>
                     </div>
                     <div className="cv">
-                        <Link href={'https://pdflink.to/4812689c/'} target='_blank'><button style={{cursor:'pointer'}}>DOWNLOAD CV</button></Link>
+                        <Link href={'https://pdflink.to/ab846943/'} target='_blank'><button style={{cursor:'pointer'}}>DOWNLOAD CV</button></Link>
                     </div>
                 </div>
             </div>
