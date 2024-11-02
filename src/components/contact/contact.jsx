@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './contact.css';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
-import { faFacebookSquare, faGithubSquare, faLinkedin, faXTwitter, faYahoo, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookSquare, faGithubSquare, faLinkedin, faRedditSquare, faXTwitter, faYahoo, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
 import { api } from '@/config/api';
 
@@ -72,15 +72,17 @@ const Contact = () => {
                         <p><FontAwesomeIcon icon={faPhone} style={{width:'1.3rem'}}/> +8801996404083</p>
                     </div>
                     <div className="cntcSocial">
-                        <Link className='cntSlink' href={'https://www.facebook.com/Mr.1Pie'}><FontAwesomeIcon icon={faFacebookSquare} style={{width:'1.5rem'}}/></Link>
+                        <Link className='cntSlink' href={'https://www.facebook.com/Mr.1Pie'} target="_blank"><FontAwesomeIcon icon={faFacebookSquare} style={{width:'1.5rem'}}/></Link>
 
-                        <Link className='cntSlink' href={'https://x.com/MrPieX'}><FontAwesomeIcon icon={faXTwitter} style={{width:'1.5rem'}}/></Link>
+                        <Link className='cntSlink' href={'https://x.com/MrPieX'} target="_blank"><FontAwesomeIcon icon={faXTwitter} style={{width:'1.5rem'}}/></Link>
 
-                        <Link className='cntSlink' href={'https://www.youtube.com/@Mr.1Pie'}><FontAwesomeIcon icon={faYoutubeSquare} style={{width:'1.5rem'}}/></Link>
+                        <Link className='cntSlink' href={'https://www.youtube.com/@Mr.1Pie'} target="_blank"><FontAwesomeIcon icon={faYoutubeSquare} style={{width:'1.5rem'}}/></Link>
 
-                        <Link className='cntSlink' href={'https://github.com/MrPieee'}><FontAwesomeIcon icon={faGithubSquare} style={{width:'1.5rem'}}/></Link>
+                        <Link className='cntSlink' href={'https://github.com/MrPieee'} target="_blank"><FontAwesomeIcon icon={faGithubSquare} style={{width:'1.5rem'}}/></Link> 
 
-                        <Link className='cntSlink' href={'https://www.linkedin.com/in/heyAbdullahBro'}><FontAwesomeIcon icon={faLinkedin} style={{width:'1.5rem'}}/></Link>
+                        <Link className='cntSlink' href={'https://www.linkedin.com/in/heyAbdullahBro'} target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{width:'1.5rem'}}/></Link>
+
+                        <Link className='cntSlink' href={'https://www.reddit.com/u/MrPieX'} target="_blank"><FontAwesomeIcon icon={faRedditSquare} style={{width:'1.5rem'}}/></Link>
 
                     </div>
                     <div className="cv">
