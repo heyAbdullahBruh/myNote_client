@@ -68,7 +68,7 @@ const Contact = () => {
                 </div>
                 <div className="addrsLink">
                     <div className="address">
-                        <p><FontAwesomeIcon icon={faYahoo} style={{width:'1.3rem'}}/><Link href={'mailto:abu.sayed121@yahoo.com'} style={{color:'white',textDecoration:'none'}}>abu.sayed121@yahoo.com</Link> </p>
+                        <p><FontAwesomeIcon icon={faYahoo} style={{width:'1.3rem'}}/><Link href={'mailto:abdullah.shayed@protonmail.com'} style={{color:'white',textDecoration:'none'}}>abu.sayed121@yahoo.com</Link> </p>
                         <p><FontAwesomeIcon icon={faPhone} style={{width:'1.3rem'}}/> +8801996404083</p>
                     </div>
                     <div className="cntcSocial">
